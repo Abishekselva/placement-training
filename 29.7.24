@@ -17,4 +17,8 @@ def convert(lst):
 lst=['a',1,'b',2,'c',3]
 print(convert(lst))
 
-#3.
+#3.split characters
+string="geeks"
+print([*string])
+
+#4.

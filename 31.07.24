@@ -34,3 +34,6 @@ else:
     print(f"Value {value_to_remove} not found in the list.")
 
 #5.lower()
+text = input("Enter the sentence: ")
+lowercase_text = text.lower()
+print(lowercase_text)

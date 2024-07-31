@@ -1,3 +1,12 @@
 #1.comprehension.py
 squares = [x**2 for x in range(10)]
 print(squares)
+
+#2.data.py
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+summary = df.describe()
+print(summary)
+
+#3.

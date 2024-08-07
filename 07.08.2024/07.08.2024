@@ -1,0 +1,45 @@
+# 1.	Write a Python program to check if a given number is positive, negative, or zero 
+
+n=int(input("Enter to a number to find positive or negative :"))
+if n==0:
+    print(f"{n} it is  Zero")
+elif n>0:
+    print(f"{n} is Positive")
+else:
+    print(f"{n} is Negative.")
+
+# #2.	Create a program that takes a user's age as input and outputs whether they are eligible to vote or not (considering the legal voting age is 18).
+
+age=int(input("Enter your age : "))
+if age>=18:
+    print("Your are eligible for voting ")
+else:
+    print("Your are not eligible for voting ")
+
+# # 3.	Write a Python program to determine whether a given year is a leap year or not
+
+y=int(input("Enter year to find leap year or not :"))
+if (y%4==0 and y%100==0 ) and y%400==0:
+    print(f"{y} is Leap year..")
+elif (y%4==0 and y%100!=0 ) and y%400!=0:
+    print(f"{y} is Leap year..")
+else:
+    print(f"{y} is Not a Leap year..")
+
+# # 4.	Develop a program that takes a user's temperature as input and outputs whether they have a fever or not (considering a fever if temperature is equal to or above 100.4°F or 38°C).
+
+h=int(input("Enter your choice 1.Faherinheit or 2.Celsius:"))
+if h==1:
+    f=float(input("Enter the temperature in Faherinheit :"))
+    if f>=100.4:
+        print("You have a fever")
+    else:
+        print("You have no fever..")
+elif h==2:
+    c=float(input("Enter the temperature in Celsius :"))
+    if c>=32:
+        print("You have a fever")
+    else:
+        print("You have no fever..")
+else:
+    print("Invalid Input...")
